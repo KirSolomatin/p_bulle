@@ -3,8 +3,14 @@
 /**
  * Retourne le type JavaScript de la donnée.
  */
+/**
+ *
+ * @param {*} value
+ * @returns type de value
+ */
 export function dataType(value) {
   // TODO
+  return typeof value;
 }
 
 /**
