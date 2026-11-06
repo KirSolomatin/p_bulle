@@ -6,6 +6,7 @@
 /**
  *
  * @param {*} value
+ * @returns le type JavaScript de la valeur
  */
 export function valueType(value) {
   // TODO
@@ -18,6 +19,7 @@ export function valueType(value) {
 /**
  *
  * @param {*} value
+ * @returns {boolean} returne si la valeur est undefined
  */
 export function isUndefined(value) {
   // TODO
@@ -30,6 +32,7 @@ export function isUndefined(value) {
 /**
  *
  * @param {*} value
+ * @returns {boolean} indique si la valeur est null
  */
 export function isNull(value) {
   // TODO
@@ -43,6 +46,7 @@ export function isNull(value) {
 /**
  *
  * @param {*} value
+ * @returns {boolean} returne true si une valeur est connue
  */
 export function hasKnownValue(value) {
   // TODO
@@ -57,6 +61,7 @@ export function hasKnownValue(value) {
  *
  * @param {*} energy
  * @param {*} minimumEnergy
+ * @returns {boolean} returne true si energy est plus grand que minimumEnergy
  */
 export function hasEnoughEnergy(energy, minimumEnergy) {
   // TODO
@@ -70,6 +75,7 @@ export function hasEnoughEnergy(energy, minimumEnergy) {
  *
  * @param {*} zone
  * @param {*} expectedZone
+ * @returns {boolean} returne true si zone === expectedZone
  */
 export function isCorrectZone(zone, expectedZone) {
   // TODO

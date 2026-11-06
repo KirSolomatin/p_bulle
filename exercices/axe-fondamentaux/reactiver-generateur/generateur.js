@@ -7,6 +7,7 @@
  *
  * @param {*} maxEnergy
  * @param {*} currentEnergy
+ * @returns {number} returne quantité d'énergie manquante
  */
 export function missingEnergy(maxEnergy, currentEnergy) {
   // TODO
@@ -20,6 +21,7 @@ export function missingEnergy(maxEnergy, currentEnergy) {
  *
  * @param {*} maxEnergy
  * @param {*} currentEnergy
+ * @returns {number} retourne le pourcentage d'énergie disponible
  */
 export function energyPercentage(maxEnergy, currentEnergy) {
   // TODO
@@ -33,6 +35,7 @@ export function energyPercentage(maxEnergy, currentEnergy) {
  *
  * @param {*} currentEnergy
  * @param {*} recharge
+ * @returns {number} returne l'énergie disponible après une recharge
  */
 export function energyAfterRecharge(currentEnergy, recharge) {
   // TODO
@@ -44,7 +47,8 @@ export function energyAfterRecharge(currentEnergy, recharge) {
  */
 /**
  *
- * @param {*} currentEnergy
+ * @param {number} currentEnergy
+ * @returns {boolean} Indique si le générateur possède au moins 500 unités d'énergie
  */
 export function isGeneratorReady(currentEnergy) {
   // TODO
@@ -56,10 +60,11 @@ export function isGeneratorReady(currentEnergy) {
  */
 /**
  *
- * @param {*} name
- * @param {*} currentEnergy
+ * @param {string} name
+ * @param {number} currentEnergy
+ * @returns {string} returne le message d'état du générateur
  */
 export function generatorStatus(name, currentEnergy) {
   // TODO
-  return name + " possède " + currentEnergy + " unités d'énergie.";
+  return `${name} possède ${currentEnergy} unités d'énergie.`;
 }
