@@ -89,8 +89,8 @@ export function checkAirspace(altitudes) {
  */
 /**
  *
- * @param {*} altitudes
- * @returns
+ * @param {*} altitudes tableau des drones
+ * @returns retourne `"Espace aérien sûr"` si aucune erreur n'a été levée
  */
 export function airspaceReport(altitudes) {
   // TODO
