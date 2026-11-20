@@ -13,22 +13,52 @@ export const MASTER_REQUIRED = ["Institut Lovelace", "École Dijkstra"];
 /**
  * Indique si une université est connue.
  */
+/**
+ *
+ * @param {*} university
+ * @returns true si  UNIVERSITIES contient university
+ */
 export function isKnownUniversity(university) {
   // TODO
+  for (let uni of UNIVERSITIES) {
+    if (uni === university) return true;
+  }
+  return false;
 }
 
 /**
  * Convertit un titre en niveau numérique.
  */
+/**
+ *
+ * @param {*} title
+ * @returns Convertit un titre en niveau numérique
+ */
 export function titleLevel(title) {
   // TODO
+  switch (title) {
+    case "Bachelor":
+      return 1;
+
+    case "Master":
+      return 2;
+
+    default:
+      return 0;
+  }
 }
 
 /**
  * Indique si une université exige un Master.
  */
+/**
+ *
+ * @param {*} university
+ * @returns Indique si une université exige un Master
+ */
 export function requiresMaster(university) {
   // TODO
+  return MASTER_REQUIRED.includes(university);
 }
 
 /**
