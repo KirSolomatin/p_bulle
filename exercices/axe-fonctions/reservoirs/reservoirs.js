@@ -1,12 +1,12 @@
 // @ts-check
 
 // TODO : importer calculateOutput depuis ../catalyseur/catalyseur.js
-
 /**
  * Crée un réservoir vide.
  */
 export function createReservoir(name, capacity) {
   // TODO
+  calculateOutput() 
 }
 
 /**
