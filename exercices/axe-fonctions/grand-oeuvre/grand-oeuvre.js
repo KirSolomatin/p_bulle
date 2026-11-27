@@ -2,12 +2,22 @@
 
 // TODO : importer stabilizeEnergy depuis ../catalyseur/catalyseur.js
 // TODO : importer formatResult depuis ../assemblage-modulaire/messages.js
+import { formatResult } from "../assemblage-modulaire/messages.js";
+import { stabilizeEnergy } from "../catalyseur/catalyseur.js";
 
 /**
  * Calcule les ingrédients qui manquent pour réaliser une recette.
  */
 export function missingIngredients(stock, recipe) {
   // TODO
+  let missing = {};
+  for (let key in recipe.needs) {
+    if (!(key in stock)) stock[key] = 0;
+    if (stock[key] < recipe.needs[key]) { 
+      missing[key] = recipe.needs[key] - stock[key];
+    }
+  }
+  return missing;
 }
 
 /**
